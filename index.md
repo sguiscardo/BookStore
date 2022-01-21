@@ -249,13 +249,12 @@ Done <3
 
 Now, uncomment the `tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath)` method. Within the body, if the `editingStye` is equal to `.delete` we will need to perform the following tasks
 
-• create a new constant that has the value of a  `Book` object.
-	• Using Subscript Syntax, and the `indexPath.row` 
-• Pass that new constant to the `deleteBook` method on the shared instance of your `Model Controller`
-	• Be sure to write this code before where the `tableView` deletes the rows
+* create a new constant that has the value of a  `Book` object, using Subscript Syntax, and the `indexPath.row` 
+* Pass that new constant to the `deleteBook` method on the shared instance of your `Model Controller`
+	* Be sure to write this code before where the `tableView` deletes the rows
 
 Our plan is to use the `Segue` we created from the `cell`  to pass a `Book` object to the `BookDetailViewController`. But for that to succeed we need something to `catch` that data when it’s sent. To do this:
-• On the `BookDetailViewController`, declare a new variable named `book` and set the type to be an optional `Book`.
+* On the `BookDetailViewController`, declare a new variable named `book` and set the type to be an optional `Book`.
 
 Navigate back to the `BookListTableViewController` 
 
