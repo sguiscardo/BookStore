@@ -1,10 +1,8 @@
 # BookStore
 
-# **Book Store**
-
 ---
 
-In this project, you will use your knowledge of Swift to build an app that displays a list of `Books` on the main page. Navigating from a `UITableVIewCell` to a detail screen reviews a way to create `book` objects and add details for the `book`!
+In this project, you will use your knowledge of Swift to build an app that displays a list of `Books` on the main page. Navigating from a `UITableVIewCell` to a detail screen reveals a way to create `book` objects and add details for the `book`!
 
 Students who complete this project independently or as a pairing will showcase their understanding of the following principles:
 
