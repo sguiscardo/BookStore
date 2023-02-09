@@ -61,26 +61,35 @@ Maybe make a commit?
 
 1. Navigate to your `Object Library` and drag a `Bar Button Item` to the top left of the scene. Update the item to be an `Add` item.
 
-We will need a few view elements to display text to the user.
+2. We will need a few view elements to display text to the user.
 
-1. Drag three of the appropriate `View Elements` onto the `UITableViewCell`
-2. To keep us organized, give each of them a `title` that describes what they will display
+3. Drag three of the appropriate `View Elements` onto the `UITableViewCell`
+
+4. To keep us organized, give each of them a `title` that describes what they will display
+   
    - (The Title will go here)
    - (author)
    - (rating)
-3. Embed the `(author)` and the `(rating)` into a horizontal stack view.
+
+5. Embed the `(author)` and the `(rating)` into a horizontal stack view.
+   
    - Fill, fill, spaced set to `Standard`.
-4. Embed this stack view into another stack view along with the `(Title will…)` label
+
+6. Embed this stack view into another stack view along with the `(Title will…)` label
+   
    - This will be a vertical stack view
    
    - Fill, Fill, 8
-5. Constrain the `Top Level` Stack view to 2 points from every side.
+
+7. Constrain the `Top Level` Stack view to 2 points from every side.
+   
    - Everything should snap into place.
 
-We will add just a few more attributes to a few of the labels.
+8. We will add just a few more attributes to a few of the labels.
 
-1. On the (title) `label,` set the number of lines to 0
-2. The (rating) `label`, via the `Size Inspector`, set the `Horizontal Hugging Priority` to one less than the vertical. This will ensure that the `(author)` label will grow in sized before the `(rating)` label does.
+9. On the (title) `label,` set the number of lines to 0
+
+10. The (rating) `label`, via the `Size Inspector`, set the `Horizontal Hugging Priority` to one less than the vertical. This will ensure that the `(author)` label will grow in sized before the `(rating)` label does.
 
 **Can we just pause and highlight that you just NESTED stack views! Look at you go!**
 
@@ -140,7 +149,7 @@ We will need to add a few view elements that will receive text from the user.
   - Enter Author...
   - Enter Rating...
 
-These will have the same configuration as the `UILabel` we place on the `UITableViewCell`
+These will have the same configuration as the `UILabel` we place on the `UITableViewCell` 
 
 - Embed the `Enter Author` and the `Enter Rating` into a horizontal stack view.
   - Fill, fill, spaced set to `Standard`
@@ -190,8 +199,6 @@ Create the proper `Controller` file for this `BookDetailViewController` and 
 Pause here to build and run. Fix any issues you have. Make a `git` commit with the proper `git message` and `push` it to your remote repo.
 
 ## **Great work!**
-
-## **Rest of the Owl**
 
 ### **Model**
 
