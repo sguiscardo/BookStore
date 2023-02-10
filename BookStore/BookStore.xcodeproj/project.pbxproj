@@ -12,6 +12,11 @@
 		419B178727987EBC00423A18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419B178527987EBC00423A18 /* Main.storyboard */; };
 		419B178927987EBE00423A18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419B178827987EBE00423A18 /* Assets.xcassets */; };
 		419B178C27987EBE00423A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419B178A27987EBE00423A18 /* LaunchScreen.storyboard */; };
+		93DC7CB32996BF5100B92A9C /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC7CB22996BF5100B92A9C /* Book.swift */; };
+		93DC7CB52996C02A00B92A9C /* BookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC7CB42996C02A00B92A9C /* BookController.swift */; };
+		93DC7CB72996C6D300B92A9C /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC7CB62996C6D300B92A9C /* BookDetailViewController.swift */; };
+		93DC7CB92996CD5700B92A9C /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC7CB82996CD5700B92A9C /* BookTableViewCell.swift */; };
+		93DC7CBB2996CDB400B92A9C /* BookListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC7CBA2996CDB400B92A9C /* BookListCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		419B178827987EBE00423A18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		419B178B27987EBE00423A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		419B178D27987EBE00423A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93DC7CB22996BF5100B92A9C /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		93DC7CB42996C02A00B92A9C /* BookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookController.swift; sourceTree = "<group>"; };
+		93DC7CB62996C6D300B92A9C /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		93DC7CB82996CD5700B92A9C /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BookTableViewCell.swift; path = "BookStore/View/Costum Views/BookTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		93DC7CBA2996CDB400B92A9C /* BookListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,20 +45,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		416F0D412798D773002D4080 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		416F0D422798D781002D4080 /* Custom Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Custom Views";
-			sourceTree = "<group>";
-		};
 		416F0D432798D797002D4080 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,28 +84,55 @@
 		419B177E27987EBC00423A18 /* BookStore */ = {
 			isa = PBXGroup;
 			children = (
-				419B17AA2798D66600423A18 /* View */,
-				419B17A92798D65100423A18 /* Model */,
-				416F0D412798D773002D4080 /* Controller */,
+				93DC7CAC2995D67100B92A9C /* View */,
+				93DC7CAE2995D67600B92A9C /* Model */,
+				93DC7CAF2995D6C000B92A9C /* Controller */,
 				416F0D442798D7CB002D4080 /* Storyboards */,
 				416F0D432798D797002D4080 /* Supporting Files */,
 			);
 			path = BookStore;
 			sourceTree = "<group>";
 		};
-		419B17A92798D65100423A18 /* Model */ = {
+		93DC7CAC2995D67100B92A9C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				93DC7CB62996C6D300B92A9C /* BookDetailViewController.swift */,
+				93DC7CBA2996CDB400B92A9C /* BookListCollectionViewController.swift */,
+				93DC7CAD2995D67400B92A9C /* Costum Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93DC7CAD2995D67400B92A9C /* Costum Views */ = {
+			isa = PBXGroup;
+			children = (
+				93DC7CB82996CD5700B92A9C /* BookTableViewCell.swift */,
+			);
+			path = "Costum Views";
+			sourceTree = "<group>";
+		};
+		93DC7CAE2995D67600B92A9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93DC7CB22996BF5100B92A9C /* Book.swift */,
+				93DC7CB12996BF2300B92A9C /* Model Controller */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		419B17AA2798D66600423A18 /* View */ = {
+		93DC7CAF2995D6C000B92A9C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				416F0D422798D781002D4080 /* Custom Views */,
 			);
-			path = View;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		93DC7CB12996BF2300B92A9C /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				93DC7CB42996C02A00B92A9C /* BookController.swift */,
+			);
+			name = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +208,11 @@
 			files = (
 				419B178027987EBC00423A18 /* AppDelegate.swift in Sources */,
 				419B178227987EBC00423A18 /* SceneDelegate.swift in Sources */,
+				93DC7CB52996C02A00B92A9C /* BookController.swift in Sources */,
+				93DC7CB32996BF5100B92A9C /* Book.swift in Sources */,
+				93DC7CB92996CD5700B92A9C /* BookTableViewCell.swift in Sources */,
+				93DC7CBB2996CDB400B92A9C /* BookListCollectionViewController.swift in Sources */,
+				93DC7CB72996C6D300B92A9C /* BookDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
